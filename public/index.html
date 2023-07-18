@@ -1,89 +1,214 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Portfolio - Hriday Bedi</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jupV7g+j8XEmWV7B1Ic2+maZ5FYF3liWY7w/6o4U6yfUug9K1J7kATc5ZQI5bz5e8lfA7Cwv4F/YLG4twxI9Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">Hriday Bedi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Home Section -->
+      <section id="home" class="py-5" style="margin-top: 70px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 align-self-center">
+                  <h1>Hello, I'm Hriday Bedi</h1>
+                  <p class="lead">I'm a web developer based in Winnipeg, Canada. I specialize in creating modern, responsive websites using the latest web technologies.</p>
+                  <a href="#contact" class="btn btn-primary btn-lg mt-3">Get In Touch</a>
+               </div>
+               <div class="col-md-6">
+                  <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Hriday Bedi" class="img-fluid rounded-circle">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="py-5 bg-light fade-in">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>About Me</h2>
+                  <p class="lead">I'm a web developer with over 5 years of experience building websites and web applications. I specialize in front-end development with HTML, CSS, and JavaScript, but I'm also proficient in back-end technologies such as PHP and SQL. I love creating beautiful and functional websites that provide a great user experience for visitors. When I'm not coding, you can find me hiking in the mountains or playing with my dog.</p>
+               </div>
+               <div class="col-md-6">
+                  <h2>Skills</h2>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><strong>HTML/CSS</strong></div>
+                  </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><strong>JavaScript</strong></div>
+                  </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><strong>PHP</strong></div>
+                  </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><strong>MySQL</strong></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Services Section -->
+      <section id="services" class="py-5 fade-in">
+         <div class="container">
+            <h2>Services</h2>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h4 class="card-title">Web Design</h4>
+                        <p class="card-text">I am excited to offer my web design services to potential clients. My passion for web design has led me to create stunning, responsive and user-friendly websites that are both aesthetically pleasing and functional.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h4 class="card-title">Web Development</h4>
+                        <p class="card-text">My web development services encompass everything from testing to deployment, and ongoing maintenance. I understand the importance of responsive design principles and creating websites optimized for all devices and screen sizes.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h4 class="card-title">SEO Optimization</h4>
+                        <p class="card-text">I specialize in creating custom websites that are tailored to meet the specific needs of my clients, ensuring that their online presence is not only visually appealing, but also easy to navigate and optimized for search engines.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-5 bg-light fade-in">
+         <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="card">
+                     <img src="images\Screenshot(to-do).png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h4 class="card-title">To-Do Web Application</h4>
+                        <p class="card-text-p">Designed and developed a responsive Todo web application using HTML, CSS, Bootstrap, and JavaScript. The application allowed users to create, manage, and organize tasks in a user-friendly, intuitive, and minimalistic interface.</p>
+                        <a href="Projects\To-Do\index.html" class="btn btn-primary">View Project</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card">
+                     <img src="images\Screenshot(nasa).png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h4 class="card-title">Copy-cat Website</h4>
+                        <p class="card-text-p">As part of a web development project, I successfully created a Copy-cat planetarium website that aimed to closely mimic the design and functionality of a popular existing website. The goal was to demonstrate my ability to replicate the original website's user interface and overall experience while adding a personal touch. The project allowed me to showcase my technical skills in front-end web development, attention to detail, and ability to deliver high-quality results. This experience reinforced my understanding of modern web development practices and the importance of creating a seamless user experience. </p>
+                        <a href="Projects\Copy Cat Nasa\assignment4.html" class="btn btn-primary">View Project</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card">
+                     <img src="images\Screenshot(order).png" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h4 class="card-title">Online Retailer Website</h4>
+                        <p class="card-text-p">Designed and developed a dynamic online retailer web application utilizing HTML, CSS, and JavaScript. Built a user-friendly interface that allows customers to browse products, add items to their shopping cart, and complete secure online transactions. Implemented responsive design principles and optimized the application for various devices and screen sizes. Leveraged HTML and CSS to create visually appealing product displays and intuitive navigation menus. Utilized JavaScript to enhance interactivity, validate user input, and provide real-time feedback. Demonstrated strong proficiency in front-end development to create a seamless and engaging online shopping experience.</p>
+                        <a href="Projects\Order Form\orderform.html" class="btn btn-primary">View Project</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 fade-in">
+         <div class="container">
+            <h2>Contact Me</h2>
+            <div class="row">
+               <div class="col-md-6">
+                  <form action="process_form.php" method="POST">
+                     <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                     </div>
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+               </div>
+               <div class="col-md-6">
+                  <p class="lead">I'm always open to new opportunities and collaborations, so if you're interested in working together, feel free to get in touch.
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.0.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.0.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.0.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                     You can use the form below to send me a message, or if you prefer, you can send me an email directly. I'll do my best to get back to you as soon as possible.</p>
+                  <ul class="list-unstyled">
+                     <li><i class="fa fa-phone"></i> (123) 456-7890</li>
+                     <li><i class="fa fa-envelope"></i> HridayBedi123@gmail.com</li>
+                     <li><i class="fa fa-map-marker"></i> Winnipeg, Canada</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <p class="text-white">&copy; 2023 Hriday Bedi</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="list-inline text-md-right">
+                     <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                     <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                     <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                     <li class="list-inline-item"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="myscript.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+   </body>
 </html>

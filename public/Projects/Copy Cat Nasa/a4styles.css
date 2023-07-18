@@ -1,0 +1,463 @@
+/******w**********
+    
+    Assignment 4 Stylesheet
+    Name: Hriday Bedi
+    Date: 2020-02-21
+    Description: NASA Planetarium website styles css
+
+*****************/
+
+html{
+    background-color: #E7E7E7;
+}
+body #container{
+    height: 100%;
+    width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(37, 37, 37), -1px -1px 2px black;
+    background-image: linear-gradient(to bottom, white 95%, #E3E3E3 100% );
+}
+
+html body #container header#part1{
+    height: 282px;
+}
+
+html body #container header#part1 div#search_nav{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html body #container header#part1 div#search_nav img#logo1{
+    height: 100%;
+}
+
+html body #container header#part1 div#search_nav input#search{
+    width: 100px;
+    margin: 25px 0px 5px 20px;
+}
+
+html body #container header#part1 div#search_nav button{
+    margin: 25px 5px 5px 0px;
+    background-color: #F0F0F0;
+    border: 1px solid #9C9C9C;
+    padding: 3px;
+    font-size: x-small;
+}
+
+html body #container header#part1 div#search_nav ul{
+    display: inline-flex;
+    list-style: none;
+    margin-bottom: 3px;
+    padding-bottom: 0px;
+    align-self: flex-end;
+}
+html body #container header#part1 div#search_nav ul li:nth-of-type(2), html body #container header#part1 div#search_nav ul li:nth-of-type(3), html body #container header#part1 div#search_nav ul li:nth-of-type(4), html body #container header#part1 div#search_nav ul li:nth-of-type(5){
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #006699;
+    /* border-right: 1px solid #006699; */
+}
+
+html body #container header#part1 div#search_nav ul li a{
+    text-decoration: none;
+    color: #006699;
+}
+
+html body #container header#part1 div#search_nav ul li:first-of-type{
+    padding-left: 7px;
+    padding-right: 7px;
+    /* border-right: 1px solid #006699; */
+}
+html body #container header#part1 div#search_nav ul li:nth-of-type(6){
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #006699; 
+}
+/* PART 1 DONE (The one before the Banner) */
+
+html body #container header section#banner{
+    background-image: url(headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -19.5px;
+    color: aliceblue; 
+}
+
+html body #container header section#banner h1{
+    /* height: 200px; */
+    position: relative;
+    top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 19.9px;
+    padding-left: 7px;
+    color: white; 
+    letter-spacing: 3.4px;
+}
+
+html body #container header section#banner h4{
+    /* height: 200px; */
+    position: relative;
+    top: 95px;
+    left: 527px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 19.9px;
+    font-weight: bold;
+    color: rgb(212, 212, 212); 
+    font-style: italic;
+    width: auto;
+}
+/* End of the god damned banner */
+
+html body #container header div#mainNav{
+    position: relative;
+    background-color: aqua;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: -20px;
+    /* background-image: linear-gradient(to bottom,white, #2D598E 50% , #327497 100% ); */
+    background-image: linear-gradient(to bottom, #99CCFF , #03699B);
+    text-align: center;
+}
+
+html body #container header div#mainNav ul{
+    display: inline-flex;
+    list-style: none;
+    padding-bottom: 0px;
+    color: aliceblue;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: small;
+    margin: 5px 15px;
+}
+html body #container header div#mainNav ul li{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #BCDDFF;
+    border-right: 1px solid #01527A;
+}
+
+html body #container header div#mainNav ul li:first-of-type{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-right: 1px solid #01527A;
+    border-left: none;
+}
+html body #container header div#mainNav ul li:last-of-type{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #BCDDFF;
+    border-right: none;
+}
+
+html body #container header div#mainNav ul li a{
+    text-decoration: none;
+    /* border-right: 2px solid #01527A; */
+    color: #EEEEEE;
+}
+
+/* Header OVER!!!!*/
+html body #container aside{/* why did I make it flex again?*/
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    padding-left: 0px;
+    width: 195px;
+    align-items: baseline;
+    /* margin-top: -20px; */
+}
+
+html body #container aside ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: x-small;
+    width: 190px;
+}
+
+html body #container aside ul li:first-of-type{/*The about li*/
+    padding: 9px;
+    background-color: #2d3436;
+    background-image: linear-gradient(to bottom, whitesmoke 0%, lightgray 74%);
+    list-style: inside;
+    font-size: 11px;
+}
+
+html body #container aside ul li{
+    padding: 4.5px;
+    background-color: #2d3436;
+    background-image: linear-gradient(to bottom, whitesmoke 0%, lightgray 74%);
+    list-style: inside;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+html body #container aside ul li span{
+    padding: 0px;
+    font-size: 10px;
+    margin: -5px -15px 0px -10px;
+}
+
+html body #container aside ul li span a{
+    position: relative;
+    top: -3px;
+    right: 1px;
+}
+
+html body #container aside ul li:nth-child(1){
+    list-style: none;
+}
+
+html body #container aside ul li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+
+html body #container aside div#asideWrap{
+    width: 195px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    color: #666666;
+}
+
+html body #container aside div#asideWrap hr{
+    border: 0.7px solid lightgrey;
+    margin: 0px auto 0px auto;
+}
+
+html body #container aside div#asideWrap p img{
+    float: right;
+}
+
+html body #container aside div#asideWrap p{
+    margin-top: 5px;
+}
+                    /* Aside DONE!!!! */
+
+section#ContentArea{
+    clear: both;
+    float: right;
+}
+
+html body div#container div#decider section#ContentArea p#active{
+    margin: 2px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+    margin-left: -10px;
+} 
+
+html body div#container div#decider section#ContentArea p#active span#specialSmall{
+    margin: auto 3px auto 3px;
+    font-size: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+} 
+
+html body div#container div#decider section#ContentArea p#active a{
+    text-decoration: none;
+    color: #0081CE;
+}
+
+section#ContentArea h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 22px;
+    color: #333333;
+}
+
+section#ContentArea hr{
+    margin-bottom: 0px;
+    border: 1px solid #DDDDDD;
+}
+
+section#ContentArea h4{
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    /* font-weight: 1000; */
+}
+
+html body #container div#decider{
+    display: flex;
+}
+
+html body #container section#ContentArea{
+    margin-left: 20px;
+}
+
+
+html body #container section#ContentArea > p {
+    margin: 2px;
+    font-size: 12px;
+    font-family: verdana;
+    line-height: 2em;
+}
+
+html body #container section#ContentArea div#floated ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+html body #container section#ContentArea div#floated p{
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+    position: relative;
+    top: -7px;    
+}
+
+html body #container section#ContentArea div#floated ul li{
+    display: block;
+    color: #2D598E;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+html body #container section#ContentArea div#floated{
+    float: left;
+    width: 320px;
+}
+
+html body #container section#ContentArea div#boxeador{
+    float: left;
+    display: block;
+    border: 1px solid lightgrey;
+    width: 255px;
+    justify-content: space-around;
+    margin-top: -5px;
+}
+
+html body #container section#ContentArea div#boxeador p{
+    margin: 0px 5px 5px 5px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+html body #container section#ContentArea div#boxeador img{
+    margin: 5px 5px 0px 5px;    
+}
+
+html body #container section#ContentArea a.THICC{
+    font-weight: bold;
+    color: #2D598E;    
+    text-decoration: none;
+}
+
+/* Footer time!!!!!!!!!!!!!!*/
+html body #container footer div#last_Nav_I_swear{
+    text-align: center;
+    /* margin-top: 10%; */
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    right: 20px;
+}
+
+
+html body #container footer div#last_Nav_I_swear ul{
+    display: inline-flex;
+    list-style: none;
+    padding-bottom: 0px;
+    /* color: aliceblue;color: aliceblue; */
+    font-family: verdana;
+    font-weight: 500;
+    font-size: 10px;
+    margin: 2px 15px;
+}
+
+html body #container footer div#last_Nav_I_swear ul li{
+    padding-left: 9px;
+    padding-right: 9px;
+    border-left: 1px solid lightblue;
+    border-right: 1px solid blue;
+    letter-spacing: 0.5px;
+}
+
+html body #container footer div#last_Nav_I_swear ul li a{
+    text-decoration: none;
+    color: #0081CE;
+}
+
+html body #container footer div#last_Nav_I_swear ul li:first-of-type{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-right: 1px solid blue;
+    border-left: none;
+}
+html body #container footer div#last_Nav_I_swear ul li:last-of-type{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid lightblue;
+    border-right: none;
+}
+
+/*Bottom navigation has ENDED!!!*/
+html body #container footer p#copyrightStuff{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    position: relative;
+    right: 7px;
+}
+html body #container footer p#copyrightStuff a{
+    text-decoration: none;
+    color: #0081CE;
+}
+
+html body #container footer p#mapStuff{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    position: relative;
+    right: 7px;
+    color: gray;
+}
+html body #container footer p#mapStuff a#NOT_THICC{
+    text-decoration: none;
+    color: #0081CE;
+    display: inline-block;
+    font-weight: bold;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    font-weight: lighter;
+}
+
