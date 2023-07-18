@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">To-Do List</a>
+		</nav>
+	</header>
+	<div class="container mt-5">
+		<form>
+			<div class="form-group">
+				<label for="task">Add a Task:</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="task" name="task">
+					<div class="input-group-append">
+						<button type="submit" class="btn btn-primary">Add</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<ul id="task-list" class="list-group mt-3"></ul>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
