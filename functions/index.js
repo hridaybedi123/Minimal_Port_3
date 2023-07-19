@@ -27,8 +27,8 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "hridaybedi123@example.com",
-    pass: "Wendigoboy!1",
+    user: functions.config().gmail.email,
+    pass: functions.config().gmail.password,
   },
 });
 
@@ -40,8 +40,8 @@ exports.sendEmailOnFormSubmission = functions.https.onRequest((req, res) => {
 
   // Email content
   const mailOptions = {
-    from: "hridaybedi123@example.com",
-    to: "hridaybedi123@example.com", // Change this to your email address
+    from: "hridaybedi123@gmail.com",
+    to: "hridaybedi123@gmail.com", // Change this to your email address
     subject: "New Form Submission from your Website",
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
