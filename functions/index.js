@@ -25,35 +25,32 @@ const nodemailer = require("nodemailer");
 
 // Gmail SMTP configuration
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: "Gmail",
   auth: {
     user: "hridaybedi123@gmail.com",
     pass: "Wendigoboy!1",
   },
 });
 
-exports.sendEmailOnFormSubmission = functions.https.onRequest((req, res) => {
-  // Get form data from the request
-  const name = req.body.name;
-  const email = req.body.email;
-  const message = req.body.message;
+exports.sendContactEmail = functions.https.onCall(async (data, context) => {
+  const { name, email, message } = data;
+
 
   // Email content
   const mailOptions = {
-    from: "hridaybedi123@gmail.com",
+    from: email,
     to: "hridaybedi123@gmail.com", // Change this to your email address
     subject: "New Form Submission from your Website",
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
 
   // Send the email
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error("Error sending email:", error);
-      res.status(500).send("Error sending email.");
-    } else {
-      console.log("Email sent successfully!");
-      res.status(200).send("Email sent successfully!");
-    }
-  });
+  try {
+    // Send the email
+    await transporter.sendMail(mailOptions);
+    return { success: true, message: 'Email sent successfully!' };
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return { success: false, message: 'Failed to send email.' };
+  }
 });
