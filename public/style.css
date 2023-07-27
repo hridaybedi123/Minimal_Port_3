@@ -11,4 +11,9 @@
   
   .card-text-p{
     height: 400px;
+    font-size: 0.9rem;
+    color: black;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
   }
