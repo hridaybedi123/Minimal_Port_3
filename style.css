@@ -17,3 +17,9 @@
     max-width: 100%;
     overflow: hidden;
   }
+
+  #profile_pic{
+    border-radius: 600%;
+    width: 560px;
+    height: 600px;
+  }
