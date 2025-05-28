@@ -11,9 +11,12 @@ $(document).on("scroll", function() {
   // Loop through each fade-in element
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
+    // Get the element's position relative to the viewport
+    var rect = tag.getBoundingClientRect();
+    var elementTop = rect.top + window.pageYOffset;
 
     // If the element's top position is above the bottom of the viewport
-    if ($(tag).position().top < pageBottom) {
+    if (elementTop < pageBottom) {
       // Add the 'visible' class to make it fade in
       $(tag).addClass("visible");
     } else {
@@ -36,17 +39,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to apply the selected theme (dark or light)
     function applyTheme(theme) {
         if (theme === 'dark') {
-            // Add dark theme classes to all relevant elements
+            // Add dark theme classes to specific elements
             body.classList.add('dark');
             navbar.classList.add('dark');
             footer.classList.add('dark');
+            
+            // Add dark theme to specific sections
+            document.querySelector('.projects-section')?.classList.add('dark');
+            document.querySelector('.about-section')?.classList.add('dark');
+            
             // Set the toggle switch to checked state
             if (themeToggle) themeToggle.checked = true;
         } else {
-            // Remove dark theme classes from all relevant elements
+            // Remove dark theme classes from all elements
             body.classList.remove('dark');
             navbar.classList.remove('dark');
             footer.classList.remove('dark');
+            
+            // Remove dark theme from specific sections
+            document.querySelector('.projects-section')?.classList.remove('dark');
+            document.querySelector('.about-section')?.classList.remove('dark');
+            
             // Set the toggle switch to unchecked state
             if (themeToggle) themeToggle.checked = false;
         }
@@ -130,7 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (var i = 0; i < tags.length; i++) {
             var tag = tags[i];
-            if ($(tag).position().top < pageBottom) {
+            var rect = tag.getBoundingClientRect();
+            var elementTop = rect.top + window.pageYOffset;
+
+            if (elementTop < pageBottom) {
                 $(tag).addClass("visible");
             } else {
                 $(tag).removeClass("visible");

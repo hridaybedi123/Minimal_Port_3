@@ -73,16 +73,27 @@
   :root {
     --bg-color: #ffffff;
     --text-color: #000000;
+    --card-bg: #ffffff;
+    --navbar-bg: #ffffff;
+    --project-bg: #f8f9fa;
+    --about-bg: #ffffff;
+    --link-color: #007bff;
   }
   
   body.dark {
     --bg-color: #121212;
     --text-color: #f0f0f0;
+    --card-bg: #1e1e1e;
+    --navbar-bg: #1a1a1a;
+    --project-bg: #1e1e1e;
+    --about-bg: #1a1a1a;
+    --link-color: #4dabf7;
   }
   
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .card {
@@ -100,54 +111,94 @@
 
 /* ... other styles ... */
 
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+/* Navbar specific styles */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  transition: background-color 0.3s ease;
 }
 
-body.dark {
-  --bg-color: #121212;
-  --text-color: #f0f0f0;
+.navbar.dark {
+  background-color: var(--navbar-bg) !important;
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  /* Add a transition for smoother theme changes */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.card {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border-color: var(--text-color); /* optional */
-  /* Add a transition for smoother theme changes */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.navbar, .footer {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  /* Add a transition for smoother theme changes */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* To make sure navbar text and links also change color */
 .navbar.dark .navbar-brand,
-.navbar.dark .nav-link,
-.navbar.dark .navbar-toggler-icon { /* Target the icon if it's an SVG or font icon that inherits color */
-    color: var(--text-color) !important; /* May need !important depending on Bootstrap specificity */
-}
-.navbar.dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240, 240, 240, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar.dark .nav-link {
+  color: var(--text-color) !important;
 }
 
+/* Project section styles */
+.projects-section {
+  background-color: var(--project-bg);
+  transition: background-color 0.3s ease;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-description {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* About section styles */
+.about-section {
+  background-color: var(--about-bg);
+  transition: background-color 0.3s ease;
+}
+
+/* Card text specific styles */
+.card-text-p {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* Links in dark mode */
+body.dark a {
+  color: var(--link-color);
+}
+
+body.dark a:hover {
+  color: #6bc4ff;
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--navbar-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer.dark {
+  background-color: var(--navbar-bg);
+}
 
 .footer.dark p,
 .footer.dark a,
 .footer.dark i {
-    color: var(--text-color) !important; /* Ensure footer text also changes */
+  color: var(--text-color);
 }
+
+/* Portfolio section override for Bootstrap's bg-light */
+#portfolio {
+  transition: background-color 0.3s ease;
+}
+
+body.dark #portfolio {
+  background-color: var(--project-bg) !important;
+}
+
+#about {
+  transition: background-color 0.3s ease;
+}
+
+body.dark #about {
+  background-color: var(--project-bg) !important;
+}
+
 
 /* ... other styles ... */
 /* --- END OF FILE style.css --- */
